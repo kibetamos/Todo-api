@@ -15,11 +15,11 @@ class App extends Component {
          .get('http://127.0.0.1:8000/api/')
          .then(res => {
             this.setState({ todos: res.data });
-     })
+         })
          .catch(err => {
             console.log(err);
 
-     });
+        });
     }
      render() {
         return (
